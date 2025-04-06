@@ -44,11 +44,24 @@
 }
 
 .btn[aria-label] {
-
     position: relative;
+
+    &::before {
+        content: "";
+        position: absolute;
+        border-radius: inherit;
+
+        inset: 1.5px;
+        background-color: var(--bg-color);
+    }
+
     &::after {
-
         content: attr(aria-label);
-
+        background: var(--bg-btn-color);
+        -webkit-background-clip: text;
+        background-clip: text;
+        color: transparent;
+        position: relative;
+        z-index: 1;
     }
 }
