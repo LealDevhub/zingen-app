@@ -3,6 +3,7 @@ a.social {
     width: 1.5rem;
     height: 1.5rem;
     background-image: var(--bg-url);
+    display: block;
 
     -webkit-background-clip: initial;
     background-clip: initial;

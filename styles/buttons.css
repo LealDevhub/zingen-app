@@ -2,7 +2,8 @@
     --bg-btn-color: var(--text-color-primary);
     --btn-color: var(--bg-color);
 
-    border: none;
+    border: 0;
+    background-color: transparent;
 
     display: flex;
     align-items: center;
@@ -26,6 +27,10 @@
         var(--brand-color-primary) 100%
     );
     --btn-color: var(--surface-color);
+
+    -webkit-background-clip: initial;
+    background-clip: initial;
+    color: var(--btn-color);
 }
 
 .btn-sm {
